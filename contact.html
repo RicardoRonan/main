@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="./contacts.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
   </head>
   <body>
+    <a href="./index.html">Home Page</a>
     <h1>Contacts</h1>
     <ul>
       <il>021 56038709</il>
     </ul>
-    <a href="./index.html">Home Page</a>
-    <link rel="stylesheet" href="./contacts.css"
+    <form action="https://formspree.io/f/mwkyrvyl" method="POST">
+      <label
+        >Name
+        <input placeholder="Your Name" type="text" name="Name" />
+      </label>
+      <label>
+        Your email:
+        <input placeholder="Your Email" type="email" name="email" />
+      </label>
+      <label>
+        Contact
+        <input placeholder="Contact" type="text" name="Contact" />
+      </label>
+      <label
+        >Date
+        <input placeholder="Date" type="date" name="Date" />
+      </label>
+      <label
+        >Time
+        <input type="time" name="Time" />
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
   </body>
 </html>
